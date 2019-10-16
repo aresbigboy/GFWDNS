@@ -17,16 +17,11 @@
 安装很简单，主要说一下配置。
 最简单的dnsmasq.conf内容如下
 
-###############################
-
 conf-dir=/etc/dnsmasq.d
-
-###############################
 
 对，你没有看错，其实这么一行不填，它都能正常运行。但我填了这么一行就是为了加载 /etc/dnsmasq.d 这个目录下的配置文件而已。
 而这个目录下，有一个我自建的叫做  dnsfq 的文件。 这个文件简略内容如下：
 
-###############################
 address=/agnesb.fr/192.168.1.10
 address=/akiba-web.com/192.168.1.10
 address=/altrec.com/192.168.1.10
@@ -36,7 +31,6 @@ address=/apartmentratings.com/192.168.1.10
 address=/apartments.com/192.168.1.10
 address=/arena.taipei/192.168.1.10
 address=/asianspiss.com/192.168.1.10
-###############################
 
 当然，文件内容肯定不止这么多，这个文件的内容应该和gfwlist一样多。我这边大概是 5480多行。
 # wc -l /etc/dnsmasq.d/dnsfq 
